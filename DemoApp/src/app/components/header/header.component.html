@@ -1,0 +1,19 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand"  routerLink="/" >{{'home' | translate}}</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active" ><a routerLink="/home">{{'home' | translate}}</a></li>
+        <li ><a routerLink="/customer">{{'customer' |  translate}}</a></li>
+        <li><a routerLink="/product">{{'product' | translate}}</a></li>
+      </ul>
+      <div style="float: right;padding-right: 10px;padding-top: 5px;" (change)= "changeLanguage($event)">
+        <select  class="form-control" >
+          <option value="en">English</option>
+          <option value="vn">VietName</option>
+        </select>
+        
+      </div>
+    </div>
+  </nav>
