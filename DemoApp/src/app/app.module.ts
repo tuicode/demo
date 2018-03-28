@@ -10,15 +10,14 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ConfigService } from './configs/config.service';
-
 import {ProductService} from './services/product.service';
-
+import {SharedModule} from './components/shared/shared.module';
 import { environment } from '../environments/environment';
 import { HeaderComponent } from './components/header/header.component';
 import { Error404Component } from './components/shared/error404/error404.component';
 import { HomeComponent } from './components/home/home.component';
 import { ProductComponent } from './components/product/product.component';
-import { CustomerComponent } from './components/customer/customer.component';
+
 
 @NgModule({
   declarations: [
@@ -26,8 +25,7 @@ import { CustomerComponent } from './components/customer/customer.component';
     HeaderComponent,
     Error404Component,
     HomeComponent,
-    ProductComponent,
-    CustomerComponent
+    ProductComponent
   ],
   imports: [
     BrowserModule,
@@ -42,6 +40,7 @@ import { CustomerComponent } from './components/customer/customer.component';
         deps: [HttpClient]
       }
     }),
+    SharedModule.forRoot(),
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [
