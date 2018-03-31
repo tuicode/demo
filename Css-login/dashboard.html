@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<style>
+.flex-container{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+}
+
+
+/* ====================    herder left */
+.header-left{
+    width: 250px;
+    background-color: red;
+}
+
+/*===================== herder left */
+.header-right{
+    width: 300px;
+    background-color: blue;
+
+}
+.header-right .box-header-item{
+    margin-top: 0;
+    margin-right: 20px;
+    border: 1px solid #000;
+    height: 50px;
+}
+
+/* ================ content */
+.main-container{
+    display: flex;
+    justify-content: flex-start;
+}
+</style>
+<body>
+    <div class="flex-container" >
+        <div class="header-container">
+            <div class="header-left"> left </div>
+            <div class="header-center"> center </div>
+            <div class="header-right">  
+                <div class="box-header-item">
+                    icon notification and User Avar + profile hover
+                </div>
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="nav">
+                    <ul class="collapsible collapsible-accordion">
+                            <li><a class="collapsible-header waves-light">Click me </a>
+                                <div class="collapsible-body">
+                                     <ul class="collapsible collapsible-accordion">
+                                        <li><a class="collapsible-header waves-light">Level 1</a>
+                                            <div class="collapsible-body">
+                                                <ul>
+                                                    <li><a href="#" class="waves-light">Link 2</a>
+                                                    </li>
+                                                    <li><a href="#" class="waves-light">Link 2</a>
+                                                        <ul>
+                                                                <li><a href="#" class="waves-light">Link 3</a>
+                                                                </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+            </div>
+            <div class="content">
+                content
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login form</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+        body{
+            background-image: url('anh1.jpg');
+            background-size: cover;
+        }
+        .flex-container {
+            display: flex;
+            justify-content: flex-end;
+            
+        }
+        @media screen and (max-width :768px) {
+            display: flex;
+            justify-content: center;
+        }
+        .login-form{
+            width: 300px;
+            height: 400px;
+            padding: 0 20px;
+            box-shadow:  0px 0px 10px 1px gray;
+            background: black;
+            margin: 60px 60px;
+            opacity: 0.60;
+            color: #fff;
+            position: relative;
+        }
+        .title{
+            text-align: center;
+            color: #fff;
+            padding: 5px;
+            font-size: 14px;
+        }
+        .btnlogin{
+            margin-top: 20px;
+        }
+        .btnStarted{
+           background-color: #fff;
+           border: 1px solid #F01714;
+           color: red;
+           font-weight: bold;
+        }
+        
+        .links{
+            padding-top: 20px;
+            color: #909090;
+            font-size: 12px;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        a:active, a :hover, a:visited{
+            text-decoration: none;
+            color: white;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="login-form">
+          
+           <h1> LoveBonito </h1>
+            <form>
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="glyphicon glyphicon-user"></i>
+                        </span>
+                        <input type="text" name="" class="form-control" placeholder="Enter username">
+                    </div>
+
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="glyphicon glyphicon-lock"></i>
+                        </span>
+                        <input type="password" name="" class="form-control" placeholder="Enter password">
+                    </div>
+                </div>
+
+                <div class="form-goup">
+                    <input type="checkbox">Remember me
+                </div>
+                <button class="btn btn-danger btn-block btnlogin">Login</button>
+                <button class="btn btn-success btn-block btnStarted">Get started</button>
+                <div class="links">
+                    <a href="" > Fogot user ID or Pin</a><br/>
+                    <a href="" > Frequently Asked Questions</a><br/>
+                    <a href="" > Mainternace Schedule</a><br/>
+                    <a href="" > Securiry & You</a>
+                </div>
+               
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
