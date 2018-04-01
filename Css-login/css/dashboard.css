@@ -387,13 +387,13 @@ ul {
   transform: rotate(-45deg);
 }
 
-.nav-item.open .subnav-toggle:before {
+.nav-item.open > .subnav-toggle:before {
   top: 15px;
   right: 6px;
   transform: rotate(-135deg);
 }
 
-.nav-item.open .subnav-toggle:after {
+.nav-item.open > .subnav-toggle:after {
   top: 15px;
   transform: rotate(-45deg);
 }
