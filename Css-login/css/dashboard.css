@@ -269,7 +269,7 @@ ul {
   width: 280px;
   min-height: calc(100vh - 132px);
   max-height: calc(100vh - 132px);
-  padding: 24px;
+  padding: 24px 16px;
 
   background-color: #3d3780;
 
@@ -280,11 +280,12 @@ ul {
 }
 
 .page-navigation.collapse {
-  width: 117px;
+  width: 64px;
+  overflow: hidden;
 }
 
 .page-navigation.collapse .fas {
-  vertical-align: top;
+  vertical-align: middle;
 }
 
 .page-navigation.collapse .nav-item {
@@ -323,10 +324,14 @@ ul {
 }
 
 .nav-item .fas {
-  font-size: 32px;
+  width: 32px;
   margin-right: 16px;
 
-  vertical-align: -6px;
+  vertical-align: -2px;
+
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
 }
 
 .nav-item a {
